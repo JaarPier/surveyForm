@@ -1,0 +1,17 @@
+body{
+    background-image: url(/image.jpg);
+    background-size: cover;
+}
+#description{
+    font-size: 25px;
+}
+#first{
+    text-align: center;
+}
+#survey-form{
+    background-color: #309975;
+    border-radius: 10px;
+}
+#title, #description{
+    color: rgb(224, 187, 248);
+}

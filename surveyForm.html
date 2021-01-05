@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+    <div id="first" class="container-fluid">
+        <h1 id="title" class="display-2">Survey Form</h1>
+        <p id="description">Thank you for helping me to finish project as well.</p>
+
+        <form class="container col-5 text-start pb-3 mb-4" id="survey-form" action="#">
+            <div class="row g-1">
+                <div class="form-group">
+                    <label class="form-label" for="name">Name:</label>
+                    <input class="form-control" type="text" placeholder="Enter your name" id="name">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email:</label>
+                    <input class="form-control" type="email" placeholder="Enter your email" id="email">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="number">Age:</label>
+                    <input class="form-control" type="number" min="1" max="99" placeholder="Enter your age" id="number">
+                </div>
+                <div id="dropdown" class="form-group">
+                    <label for="city">City:</label>
+                    <select class="form-control" name="town" id="city">
+                        <option value="NY">New York</option>
+                        <option value="AL">Alabama</option>
+                        <option value="LA">Los Angeles</option>
+                        <option value="W">Washington</option>
+                    </select>
+                </div>
+                <div class="row p-0 m-0">
+                    <div class="col-6 container-fluid text-start">
+                        <p>Which school did you finished?</p>
+                        <div class=" form-check text-start">
+                            <div class="form-check">
+                                <input type="radio" name="school" value="economic" id="economic">
+                                <label for="economic">Economic</label>
+                            </div>
+                            <div class="form-check">
+
+                                <input type="radio" name="school" value="medicine" id="medicine">
+                                <label for="medicine">Medicine</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="school" value="cscience" id="cscience">
+                                <label for="cscience">Computer Science</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 container-fluid text-start">
+                        <p>What is your favourite color?</p>
+                        <div class="form-check">
+                            <div>
+                                <input class="form-check-input" type="checkbox" id="b" value="blue">
+                                <label class="form-check-label" for="b">Blue</label>
+                            </div>
+                            <div>
+                                <input class="form-check-input" type="checkbox" id="g" value="green">
+                                <label class="form-check-label" for="g">Green</label>
+                            </div>
+                            <div>
+                                <input class="form-check-input" type="checkbox" id="r" value="red">
+                                <label class="form-check-label" for="r">Red</label>
+                            </div>
+                            <div>
+                                <input class="form-check-input" type="checkbox" id="y" value="yellow">
+                                <label class="form-check-label" for="y">Yellow</label>
+                            </div>
+                            <div>
+                                <input class="form-check-input" type="checkbox" id="w" value="white">
+                                <label class="form-check-label" for="w">White</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-check p-0">
+                    <p class="m-1">Comment:</p>
+                    <textarea class="form-control" id="area" cols="40" rows="5"></textarea>
+                    <label for="area"></label>
+                </div>
+                <button id="submit" class="btn btn-primary">Submit</button>
+            </div>
+    </div>
+    </section>
+    </form>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
